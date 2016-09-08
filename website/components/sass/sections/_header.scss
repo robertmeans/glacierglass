@@ -1,0 +1,24 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	// background: url(_images/glacier-glass-logo.png) no-repeat top 28px left 42px;
+	background-color: #570000;
+	width: 100%;
+	max-width: 1600px;
+	height: 160px;
+
+	div {
+		display: inline-block;
+		margin-top: 25px;
+		color: #fff;
+		font-family: 'Prompt', sans-serif;
+		font-size: 24pt;
+	}
+	.title {
+		margin-left: 70px;
+	}
+	.title-phone {
+		margin-right: 50px;
+		font-size: 20pt;
+	}
+}
