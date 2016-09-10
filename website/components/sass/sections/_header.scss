@@ -9,16 +9,46 @@ header {
 
 	div {
 		display: inline-block;
+		width: 100%;
 		margin-top: 25px;
 		color: #fff;
 		font-family: 'Prompt', sans-serif;
 		font-size: 24pt;
+		p {
+			margin: 0;
+		}
+		img {
+			display: inline-block;
+			float: left;
+			height: 120px;
+			margin-top: 5px;
+			margin-left: 70px;
+		}
+		.glacier-glass {
+			display: block;
+			float: left;
+			margin-top: 75px;
+			margin-left: 15px;
+		}
+		.phone-number {
+			display: block;
+			float: right;
+			margin-top: 79px;
+			margin-right: 30px;
+			font-size: 18pt;
+		}
 	}
-	.title {
-		margin-left: 70px;
-	}
-	.title-phone {
-		margin-right: 50px;
-		font-size: 20pt;
+}
+@media only screen and (max-width: 1090px) {
+	header div {
+		.glacier-glass {
+			display: inline-block;
+			margin-top: 40px;
+		}
+		.phone-number {
+			display: inline-block;
+			float: left;
+			margin: 30px 0 0 -490px;
+		}
 	}
 }

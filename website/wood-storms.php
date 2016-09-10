@@ -18,10 +18,8 @@
 </head>
 <body>
 <div id="wrapper">
-	<header>
-		<div class="title">Glacier Glass, Window Solutions</div><div class="title-phone">(303) 722-5952</div>
-	</header>
 
+<?php include "_includes/header.php" ?>
 <?php include "_includes/navigation.php" ?>
 
 <section class="cf">
@@ -29,11 +27,7 @@
 		<article>
 			<h1>Wood Storms</h1>
 			
-			<p>Owner John Aramovich and Glacier Glass have been doing business in Denver for over 25 years.</p>
-
-			<p>John Aramovich <em>is</em> Glacier Glass. John has worked independently with homeowners in all of Denver’s Landmark and suburban neighborhoods. His ability to simply fix and/or find practical and creative solutions to every window problem is the hallmark of his business. From repairing a broken pane to opening windows that have been painted shut to creating custom storms for favorite windows or just replacing the window entirely, John’s vast experience can accomplish it all. The quality of his workmanship honors his relationship with you, your home and the community in which you live.</p>
-
-			<p>John’s customers call back, and consistently refer him to their neighbors and friends.</p>
+			<p>Custom made wood storm windows allow your home's original windows to be seen and add energy savings and sound reduction to the value. John makes each storm window to your home's unique specifications. Crafted using mortise and tenon joints, these windows are built to last. They are easily maintained for cleaning and allow for the exchange of screens and storms for seasonal needs.</p>
 		</article>
 
 
@@ -41,17 +35,17 @@
 		<div class="flexslider">
 			<ul class="slides">
 				<li>
-					<img src="_images/john-workshop-01.jpg">
+					<img src="_images/storm-01.jpg">
 				</li>
 				<li>
-					<img src="_images/john-workshop-02.jpg">
+					<img src="_images/storm-02.jpg">
 					<!-- <p class="flex-caption">something here.</p> -->
 				</li>
 				<li>
-					<img src="_images/john-workshop-03.jpg">
+					<img src="_images/storm-03.jpg">
 				</li>
 				<li>
-					<img src="_images/john-workshop-04.jpg">
+					<img src="_images/storm-04.jpg">
 				</li>
 			</ul>
 		</div>
@@ -62,7 +56,7 @@
 <?php include "_includes/footer.php" ?>
 </div>
 
-<!-- <script src="js/scripts.js?<?php echo time(); ?>"></script> -->
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
 <script src="js/flexslider.js"></script>
 
 <script src="http://localhost:35729/livereload.js"></script>	

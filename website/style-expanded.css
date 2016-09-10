@@ -336,16 +336,14 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 .flexslider {
-  width: 60%;
-  max-width: 800px;
   height: auto;
-  margin: 30px auto;
+  margin: 30px 15px;
   background: #ffffff;
   border: none;
   position: relative;
   zoom: 1;
-  float: left;
-  border: 1px solid #000;
+  display: inline-block;
+  float: right;
 }
 
 .flexslider .slides img {
@@ -355,7 +353,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-viewport {
-  width: 100%;
+  width: auto;
   max-width: 800px;
 }
 
@@ -396,6 +394,10 @@ li.css a {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #c3d8eb;
   background: #c3d8eb url(_images/window-bkg-01.png) repeat;
@@ -416,6 +418,15 @@ h1 {
   margin: 1em 0 1.5em;
 }
 
+a.hide-link {
+  color: inherit;
+  text-decoration: none;
+}
+a.hide-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 #wrapper {
   position: relative;
   background-color: #fff;
@@ -425,20 +436,41 @@ h1 {
 }
 
 section {
-  width: 100%;
+  position: relative;
+  width: 90%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 45px auto 0px auto;
+  padding: 0 2%;
+}
+section div {
+  width: 56%;
+  max-width: 800px;
 }
 
 article {
+  display: inline-block;
   float: left;
   width: 40%;
   max-width: 560px;
   background-color: #fff;
-  margin: 40px 50px 40px 15px;
+  margin: 40px 0px;
   font-family: 'Prompt', sans-serif;
   font-size: 1em;
   color: #333;
+}
+article ul li {
+  line-height: 1.5em;
+  list-style-type: disc;
+  margin: .5em 0 .5em 1em;
+}
+
+a.tel {
+  color: inherit;
+  text-decoration: none;
+}
+a.tel:hover, a.tel:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 a.back-to-top {
@@ -491,19 +523,47 @@ header {
 }
 header div {
   display: inline-block;
+  width: 100%;
   margin-top: 25px;
   color: #fff;
   font-family: 'Prompt', sans-serif;
   font-size: 24pt;
 }
-header .title {
+header div p {
+  margin: 0;
+}
+header div img {
+  display: inline-block;
+  float: left;
+  height: 120px;
+  margin-top: 5px;
   margin-left: 70px;
 }
-header .title-phone {
-  margin-right: 50px;
-  font-size: 20pt;
+header div .glacier-glass {
+  display: block;
+  float: left;
+  margin-top: 75px;
+  margin-left: 15px;
+}
+header div .phone-number {
+  display: block;
+  float: right;
+  margin-top: 79px;
+  margin-right: 30px;
+  font-size: 18pt;
 }
 
+@media only screen and (max-width: 1090px) {
+  header div .glacier-glass {
+    display: inline-block;
+    margin-top: 40px;
+  }
+  header div .phone-number {
+    display: inline-block;
+    float: left;
+    margin: 30px 0 0 -490px;
+  }
+}
 nav {
   display: -ms-flexbox;
   display: flex;
@@ -517,6 +577,7 @@ nav {
   line-height: 45px;
   font-family: 'Prompt', sans-serif;
   font-size: 12pt;
+  z-index: 1000;
 }
 nav ul {
   list-style-type: none;
@@ -538,11 +599,155 @@ nav ul li a:hover {
   background-color: #ca4949;
 }
 
+.main-nav {
+  position: absolute;
+}
+
+.main-nav-scrolled {
+  position: fixed;
+  width: 96%;
+  max-width: 1600px;
+  margin: 0 auto;
+  top: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+body.contact-page {
+  background-color: #fff;
+}
+body.contact-page div.section-container {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+body.contact-page section {
+  width: 50%;
+  max-width: 560px;
+  background-color: #fff;
+  margin: 40px 0px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1em;
+  color: #333;
+  padding: 0 2%;
+}
+body.contact-page section#left-side {
+  float: left;
+}
+body.contact-page section#left-side h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 2em 0 1em 2em;
+}
+body.contact-page section#left-side p {
+  margin-left: 66px;
+}
+body.contact-page section#right-side {
+  float: right;
+  padding: 50px 16px 30px 16px;
+}
+body.contact-page section#right-side label {
+  display: block;
+}
+body.contact-page section#right-side input {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+body.contact-page section#right-side input#name,
+body.contact-page section#right-side input#email {
+  height: 25px;
+  width: 55%;
+}
+body.contact-page section#right-side textarea#comments {
+  height: 150px;
+  width: 80%;
+}
+body.contact-page section#right-side input#send {
+  display: inline-block;
+  float: left;
+  width: 150px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 1px solid #233851;
+  background: #ccc;
+  color: #000;
+}
+body.contact-page section#right-side input#send:hover {
+  background: #565656;
+  color: #fff;
+}
+body.contact-page section#right-side input#send:active, body.contact-page section#right-side input#send:focus {
+  outline: 0;
+  outline-style: 0;
+}
+body.contact-page section#right-side input#send:visited {
+  background: #ccc;
+}
+body.contact-page footer {
+  clear: both;
+}
+
+body.thank-you-page {
+  font-family: 'Prompt', sans-serif;
+}
+body.thank-you-page section {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 1em;
+  color: #333;
+  padding: 50px;
+}
+body.thank-you-page section h1 {
+  font-size: 18pt;
+  margin: 1em;
+  font-weight: bold;
+}
+body.thank-you-page section p {
+  line-height: 1.5em;
+}
+body.thank-you-page section a {
+  color: #0000ff;
+  text-decoration: none;
+}
+body.thank-you-page section a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px) {
+  body.thank-you-page section {
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body.contact-page section#left-side h2 {
+    margin-left: .5em;
+  }
+  body.contact-page section#left-side p {
+    margin-left: 20px;
+  }
+  body.contact-page section {
+    width: 100%;
+    float: none;
+    margin: 0;
+    display: block;
+  }
+  body.contact-page section#left-side,
+  body.contact-page section#right-side {
+    float: none;
+  }
+  body.contact-page section#right-side input#name,
+  body.contact-page section#right-side input#email,
+  body.contact-page section#right-side textarea#comments {
+    width: 90%;
+  }
+}
 footer {
   width: 100%;
   max-width: 1600px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IM Fell Great Primer', sans-serif;
   margin-bottom: 100px;
   background-color: #280b0b;
 }
@@ -550,7 +755,6 @@ footer .tagline {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 75px;
-  font-style: italic;
   font-size: 20pt;
 }
 footer .copyright {
@@ -565,4 +769,229 @@ footer .copyright a {
 }
 footer .copyright a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1090px) {
+  .sm-gone {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    -ms-flex-pack: inherit;
+        justify-content: inherit;
+    height: auto;
+  }
+  nav ul li a {
+    width: 100%;
+  }
+
+  #main-nav {
+    /*width: auto; ---- this causes the toggle to disappear - ?*/
+    margin: 0;
+    background: white;
+    overflow: hidden;
+  }
+
+  #main-nav li {
+    margin: 0;
+    float: none;
+    position: relative;
+  }
+
+  .topMenu {
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  .topMenu.expand {
+    max-height: 900em;
+    visibility: visible;
+  }
+
+  #main-nav a, #main-nav h3 {
+    font-size: 1.2em;
+    padding: 0 4.58333%;
+    text-align: left;
+    color: #fff;
+    display: block;
+    margin: 0px 0px 1px 0px;
+    background: #a30000;
+    line-height: 2.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #main-nav a:hover, #main-nav h3:hover {
+    background: #ca4949;
+  }
+
+  #main-nav a:hover {
+    color: white;
+  }
+
+  #main-nav a.current {
+    color: #ede4d6;
+  }
+
+  #main-nav span.indicator {
+    padding-left: 10px;
+    position: absolute;
+  }
+
+  /*--------mobile dropdown navigation styles*/
+  #main-nav ul.submenu {
+    float: none;
+    height: auto;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+  }
+
+  #main-nav ul.submenu.expand {
+    max-height: 20em;
+  }
+
+  #main-nav ul.submenu li a {
+    padding: .2em 1em;
+    white-space: nowrap;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 3em;
+  }
+
+  #main-nav ul.submenu li a:hover {
+    background: #ca4949;
+  }
+
+  #main-nav .menuToggle {
+    display: block;
+    background: #4c4341;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .menuToggle a {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1091px) {
+  .lg-gone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 960px) {
+  section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+  }
+
+  .flexslider {
+    display: block;
+    width: 96%;
+    -ms-flex-order: 1;
+        order: 1;
+    margin: 10px auto 10px auto;
+    float: none;
+  }
+
+  article {
+    -ms-flex-order: 2;
+        order: 2;
+    margin: 15px 0px;
+    width: 96%;
+    max-width: 1000px;
+  }
+  article h1 {
+    margin: .3em 0 1em;
+  }
+}
+@media only screen and (max-width: 820px) {
+  header div {
+    font-size: 20pt;
+  }
+  header div .phone-number {
+    font-size: 14pt;
+    margin: 30px 0 0 -408px;
+  }
+
+  article h1 {
+    line-height: 1em;
+  }
+}
+@media only screen and (max-width: 690px) {
+  header {
+    height: 140px;
+  }
+
+  header div {
+    font-size: 18pt;
+    margin: 10px 0px;
+  }
+  header div img {
+    height: 80px;
+    margin: 10px 0 10px 10px;
+  }
+  header div p {
+    line-height: 1em;
+  }
+  header div .glacier-glass {
+    margin: 30px 0 10px 10px;
+  }
+  header div .phone-number {
+    font-size: 12pt;
+    margin: 35px 0 0 -368px;
+  }
+
+  footer .tagline {
+    font-size: 14pt;
+    padding-bottom: 45px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  header {
+    height: 150px;
+  }
+
+  header div img {
+    display: block;
+    float: none;
+    margin: 0 auto 8px auto;
+  }
+  header div .glacier-glass {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    text-align: center;
+    font-size: 16pt;
+  }
+  header div .phone-number {
+    display: block;
+    float: none;
+    margin: -25px auto 0px auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header div .glacier-glass {
+    font-size: 12pt;
+  }
+  header div .phone-number {
+    font-size: 10pt;
+  }
+
+  footer {
+    padding: 10px;
+  }
+  footer .copyright {
+    text-align: center;
+    padding: 0;
+  }
 }

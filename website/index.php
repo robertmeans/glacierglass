@@ -11,22 +11,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Prompt|Roboto:300i,400|Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i|Prompt|Roboto:300i,400|Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
-	<header>
-		<div class="title">
-			<img src="_images/glacier-glass-logo.png"> Glacier Glass, Window Solutions
-		</div>
-		<div class="title-phone">
-			(303) 722-5952
-		</div>
-	</header>
 
+<?php include "_includes/header.php" ?>
 <?php include "_includes/navigation.php" ?>
 
 <section class="cf">
@@ -65,7 +58,7 @@
 <?php include "_includes/footer.php" ?>
 </div>
 
-<!-- <script src="js/scripts.js?<?php echo time(); ?>"></script> -->
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
 <script src="js/flexslider.js"></script>
 
 <script src="http://localhost:35729/livereload.js"></script>	

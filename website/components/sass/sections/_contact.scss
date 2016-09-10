@@ -1,0 +1,141 @@
+body.contact-page {
+	background-color: #fff;
+	div.section-container {
+		width: 100%;
+		max-width: 1000px;
+		display: block;
+		margin: 0 auto;
+	}
+	section {
+		width: 50%;
+		max-width: 560px;
+		background-color: #fff;
+		margin: 40px 0px;
+		font-family: 'Prompt', sans-serif;
+		font-size: 1em;
+		color: #333;
+		padding: 0 2%;
+	}
+	section#left-side {
+		float: left;
+		h2 {
+			font-weight: bold;
+			font-size: 2em;
+			margin: 2em 0 1em 2em;
+		}
+		p {
+			margin-left: 66px;
+		}
+	}
+	section#right-side {
+		float: right;
+		padding: 50px 16px 30px 16px;
+		label {
+			display: block;
+		}
+		input {
+			margin-bottom: 20px;
+			margin-top: 5px;
+		}
+		input#name,
+		input#email {
+			height: 25px;
+			width: 55%;
+		}
+		textarea#comments {
+			height: 150px;
+			width: 80%;
+		}
+		input#send {
+			display: inline-block;
+			float: left;
+			width: 150px;
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 3px;
+			border: 1px solid #233851;
+			background: #ccc;
+			color: #000;
+			&:hover {
+				background: #565656;
+				color: #fff;
+			}
+			&:active, &:focus {
+				outline: 0;
+				outline-style: 0;
+			}
+			&:visited {
+				background: #ccc;
+			}			
+		}
+	}
+	footer {
+		clear: both;
+	}
+}
+
+body.thank-you-page {
+	font-family: 'Prompt', sans-serif;
+	section {
+		width: 100%;
+		background-color: #fff;
+		// height: 300px;
+		text-align: center;
+		line-height: 1em;
+		color: #333;
+		padding: 50px;
+		h1 {
+			font-size: 18pt;
+			margin: 1em;
+			font-weight: bold;
+		}
+		p {
+			line-height: 1.5em;
+		}
+		a {
+			color: #0000ff;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 450px) {
+	body.thank-you-page {
+		section {
+			padding: 25px;
+			// height: 250px;
+		}
+	}
+}
+@media only screen and (max-width: 900px) {
+	body.contact-page {
+		section#left-side {
+			h2 {
+				margin-left: .5em;
+			}
+			p {
+				margin-left: 20px;
+			}
+		}
+		section {
+			width: 100%;
+			float: none;
+			margin: 0;
+			display: block;
+		}
+		section#left-side,
+		section#right-side {
+			float: none;
+		}
+		section#right-side {
+			// margin: 0 0 0 2%;
+			input#name,
+			input#email,
+			textarea#comments {
+				width: 90%;
+			}
+		}
+	}
+}

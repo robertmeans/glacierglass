@@ -16,53 +16,58 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="contact-page">
 <div id="wrapper">
-	<header>
-		<div class="title">Glacier Glass, Window Solutions</div><div class="title-phone">(303) 722-5952</div>
-	</header>
 
+<?php include "_includes/header.php" ?>
 <?php include "_includes/navigation.php" ?>
 
-<section class="cf">
+<div class="section-container">
+<section id="left-side">
 
-		<article>
-			<h1>Contact</h1>
-			
-			<p>Owner John Aramovich and Glacier Glass have been doing business in Denver for over 25 years.</p>
+<h2>Contact</h2>
+	<p>Please let us know how we can help.</p>
+	<p>Glacier Glass<br>
+	715 Aspen Way<br>
+	Evergreen, CO</p>
 
-			<p>John Aramovich <em>is</em> Glacier Glass. John has worked independently with homeowners in all of Denver’s Landmark and suburban neighborhoods. His ability to simply fix and/or find practical and creative solutions to every window problem is the hallmark of his business. From repairing a broken pane to opening windows that have been painted shut to creating custom storms for favorite windows or just replacing the window entirely, John’s vast experience can accomplish it all. The quality of his workmanship honors his relationship with you, your home and the community in which you live.</p>
+	<p><a class="tel" href="tel:(303) 722-5952">303.722.5952</a> - Office<br>
+	<a class="tel" href="tel:(720) 244-7634">720.244.7634</a> - Cell</p>
 
-			<p>John’s customers call back, and consistently refer him to their neighbors and friends.</p>
-		</article>
-
-
-
-		<div class="flexslider">
-			<ul class="slides">
-				<li>
-					<img src="_images/john-workshop-01.jpg">
-				</li>
-				<li>
-					<img src="_images/john-workshop-02.jpg">
-					<!-- <p class="flex-caption">something here.</p> -->
-				</li>
-				<li>
-					<img src="_images/john-workshop-03.jpg">
-				</li>
-				<li>
-					<img src="_images/john-workshop-04.jpg">
-				</li>
-			</ul>
-		</div>
-
+	<p><a href="mailto:john@glacierglass.biz">John@GlacierGlass.biz</a></p>
 
 </section>
+<section id="right-side">
+    <form action="formmail.php" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">
+        
+    <ul>
+        <li>
+          <label class="text" for="name">Name</label>
+          <input name="name" type="text" id="name" tabindex="10" />
+        </li>
+        <li>
+          <label class="text" for="email">Email</label>
+          <input name="email" type="email" id="email" tabindex="20" />
+        </li>
+        <li>
+          <label class="text" for="comments">Comments</label>
+          <textarea name="comments" id="comments" tabindex="30"></textarea>
+        </li>
+        <li>
+            <input id="send" type="submit" value="Send" tabindex="40" />
+        </li>
+        
+    </ul> 
+    
+    </form>
+
+</section>
+</div>
 
 <?php include "_includes/footer.php" ?>
 </div>
 
-<!-- <script src="js/scripts.js?<?php echo time(); ?>"></script> -->
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
 <script src="js/flexslider.js"></script>
 
 <script src="http://localhost:35729/livereload.js"></script>	

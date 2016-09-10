@@ -1,0 +1,222 @@
+@media only screen and (max-width: 1090px) {
+	.sm-gone {
+		display: none;
+	}
+	nav {
+	display: block;
+	justify-content: inherit;
+	height: auto;
+		ul li a {
+			width: 100%;
+		}
+	}
+
+
+
+
+#main-nav {
+	/*width: auto; ---- this causes the toggle to disappear - ?*/
+	// width: 100%;
+	// font-family: Myriad Web Pro;
+	margin: 0;
+	background: white;
+	overflow: hidden;
+}
+#main-nav li {
+    margin: 0;
+    float: none;
+    position: relative;
+}
+.topMenu {
+	max-height: 0;
+	visibility: hidden;
+}
+.topMenu.expand {
+	max-height: 900em;
+	visibility: visible;
+}
+#main-nav a, #main-nav h3 {
+	font-size: 1.2em;
+	// width: 100%;
+	padding: 0 4.58333%;
+	text-align: left;
+	color: #fff;	
+	display: block;
+	margin: 0px 0px 1px 0px;
+	background: #a30000;
+	line-height: 2.2em;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+}
+#main-nav a:hover, #main-nav h3:hover {
+	background: #ca4949;
+}
+#main-nav a:hover {
+	color: white;
+}
+#main-nav a.current {
+color: #ede4d6;
+}
+#main-nav span.indicator {
+	padding-left: 10px;
+	position: absolute;
+	// right: 1em;
+}
+
+/*--------mobile dropdown navigation styles*/
+#main-nav ul.submenu {
+	float: none;
+	// width: 100%;
+	height: auto;
+	max-height: 0;
+	transition: max-height 0.5s ease;
+	overflow: hidden;
+}
+#main-nav ul.submenu.expand {
+	max-height: 20em;
+}
+#main-nav ul.submenu li a {
+	padding: .2em 1em;
+	white-space: nowrap;
+	color: white;
+	text-align: left;
+	font-size: 1.2em;
+	padding-left: 3em;
+	// background: rgb(58, 98, 102);
+}
+#main-nav ul.submenu li a:hover {
+	background: #ca4949;
+}
+#main-nav .menuToggle {
+	display: block;
+	background: rgb(76, 67, 65);
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+	// border-radius: 3px;
+}
+.menuToggle a {
+	text-align: center;
+	padding: 0;
+}
+
+
+}
+@media only screen and (min-width: 1091px) {
+	.lg-gone {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	section {
+		display: flex;
+		flex-flow: column;
+	}
+	.flexslider {
+		display: block;
+		width: 96%;
+		order: 1;
+		margin: 10px auto 10px auto;
+		float: none;
+	}
+	article {
+		order: 2;
+		margin: 15px 0px;
+		width: 96%;
+		max-width: 1000px;
+		h1 {
+			margin: .3em 0 1em;
+		}
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	header div {
+		font-size: 20pt;
+		.phone-number {
+			font-size: 14pt;
+			margin: 30px 0 0 -408px;
+		}
+	}
+	article h1 {
+		line-height: 1em;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	header {
+		height: 140px;
+	}
+	header div {
+		font-size: 18pt;
+		// display: block;
+		// text-align: center;
+		margin: 10px 0px;
+		img {
+			height: 80px;
+			margin: 10px 0 10px 10px;
+		}
+		p {
+			line-height: 1em;
+		}
+		.glacier-glass {
+			margin: 30px 0 10px 10px;
+		}
+		.phone-number {
+			font-size: 12pt;
+			margin: 35px 0 0 -368px;
+		}
+	}
+	footer .tagline {
+		font-size: 14pt;
+		padding-bottom: 45px;
+	}
+}
+
+
+@media only screen and (max-width: 690px) {
+	header {
+		height: 150px;
+	}
+	header div {
+		img {
+			display: block;
+			float: none;
+			margin: 0 auto 8px auto;
+		}
+		.glacier-glass {
+			margin: 0 auto;
+			display: block;
+			float: none;
+			text-align: center;
+			font-size: 16pt;
+		}
+		.phone-number {
+			display: block;
+			float: none;
+			margin: -25px auto 0px auto;
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	header div {
+		.glacier-glass {
+			font-size: 12pt;
+		}
+		.phone-number {
+			font-size: 10pt;
+		}
+	}
+	footer {
+		padding: 10px;
+		.copyright {
+			text-align: center;
+			padding: 0;
+		}
+	}
+}
