@@ -758,6 +758,7 @@ footer .tagline {
   font-size: 20pt;
 }
 footer .copyright {
+  font-family: 'Roboto', sans-serif;
   text-align: right;
   padding: 60px 60px 40px 0;
   font-size: 10px;
