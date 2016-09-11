@@ -28,8 +28,6 @@
 			<h1>Restoration</h1>
 			
 			<p>Restoring the design and integrity of your home's original windows, so often irreplaceable, requires experience, skill and old world craftsmanship.</p>
-
-			<p>This might include:</p>
 			
 			<ul>
 				<li>Sash Cord Replacement - Re-roping and reworking broken pulley systems</li>

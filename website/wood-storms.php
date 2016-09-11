@@ -27,7 +27,7 @@
 		<article>
 			<h1>Wood Storms</h1>
 			
-			<p>Custom made wood storm windows allow your home's original windows to be seen and add energy savings and sound reduction to the value. John makes each storm window to your home's unique specifications. Crafted using mortise and tenon joints, these windows are built to last. They are easily maintained for cleaning and allow for the exchange of screens and storms for seasonal needs.</p>
+			<p>Custom made wood storm windows allow your home's original windows to be seen and add energy savings and noise reduction to the value. John makes each storm window to your home's unique specifications. Crafted using mortise and tenon joints, these windows are built to last. They are easily maintained for cleaning and allow for the exchange of screens and storms for seasonal needs.</p>
 		</article>
 
 

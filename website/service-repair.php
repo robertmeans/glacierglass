@@ -29,14 +29,13 @@
 			
 			<p>Glacier Glass provides many different services and quality repair to all windows, new and old, including but not limited to:</p>
 			<ul>
-				<li>Single Pane Glass - Replace broken glass and putty glazing</li>
-				<li>Double Pane Glass - Repair broken, seal failure, condensation or fogged windows</li>
-				<li>Putty Glazing - Replace cracked and dried out putty</li>
-				<li>Screen - Replace screen mesh and/or rebuild frames</li>
-				<li>Windows Painted Shut - Paint removal and re-establish proper operation</li>
-				<li>Replace Windodw Hardware - Locks, cranks, hinges and pulleys</li>
 				<li>Sash Cords - Replace broken ropes</li>
-				<li>Storm Windows - Metal or wood, broken glass, screens, latches, metal and plastic corners</li>
+				<li>Single Pane Glass - Replace broken glass and putty glazing</li>
+				<li>Putty Glazing - Replace cracked and dried out putty</li>
+				<li>Windows Painted Shut - Paint removal and re-establish proper operation</li>
+				<li>Screen - Replace screen mesh and/or rebuild frames</li>
+				<li>Replace Window Hardware - Locks, cranks, hinges and pulleys</li>
+				<li>Storm Windows -  miscellaneous service and repair</li>
 			</ul>
 		</article>
 

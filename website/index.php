@@ -41,10 +41,6 @@
 				</li>
 				<li>
 					<img src="_images/john-workshop-02.jpg">
-					<!-- <p class="flex-caption">something here.</p> -->
-				</li>
-				<li>
-					<img src="_images/john-workshop-03.jpg">
 				</li>
 				<li>
 					<img src="_images/john-workshop-04.jpg">
