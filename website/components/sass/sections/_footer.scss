@@ -1,10 +1,14 @@
+div.shoe {
+	width: 100%;
+	background: #280b0b url("_images/footer-bkg.jpg") repeat-x;
+}
 footer {
 	width: 100%;
 	max-width: 1600px;
 	color: #fff;
 	font-family: 'IM Fell Great Primer', sans-serif;
 	margin-bottom: 100px;
-	background-color: #280b0b;
+	// background-color: #280b0b;
 	.tagline {
 		text-align: center;
 		padding-top: 30px;

@@ -5,7 +5,8 @@
 	nav {
 	display: block;
 	justify-content: inherit;
-	height: auto;
+	// height: auto;
+	// height: inherit;
 		ul li a {
 			width: 100%;
 		}
@@ -20,7 +21,7 @@
 	// font-family: Myriad Web Pro;
 	margin: 0;
 	background: white;
-	overflow: hidden;
+	// overflow: hidden;
 }
 #main-nav li {
     margin: 0;
@@ -34,6 +35,7 @@
 .topMenu.expand {
 	max-height: 900em;
 	visibility: visible;
+	background-color: #fff;
 }
 #main-nav a, #main-nav h3 {
 	font-size: 1.2em;
@@ -74,7 +76,7 @@ color: #ede4d6;
 	overflow: hidden;
 }
 #main-nav ul.submenu.expand {
-	max-height: 20em;
+	max-height: 20em;	
 }
 #main-nav ul.submenu li a {
 	padding: .2em 1em;

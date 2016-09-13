@@ -2,13 +2,12 @@
 <html lang="en">
 <?php include "_includes/head.php" ?>
 <body>
-<div id="wrapper">
 
 <?php include "_includes/header.php" ?>
 <?php include "_includes/navigation.php" ?>
 
-<section class="cf">
-
+<div class="wrap">
+	<section class="cf">
 		<article>
 			<p>Owner John Aramovich and Glacier Glass have been doing business in Denver for over 25 years.</p>
 
@@ -33,11 +32,10 @@
 			</ul>
 		</div>
 
-
-</section>
+	</section>
+</div>
 
 <?php include "_includes/footer.php" ?>
-</div>
 
 <script src="js/scripts.js?<?php echo time(); ?>"></script>
 <script src="js/flexslider.js"></script>

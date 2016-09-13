@@ -399,8 +399,7 @@ li.css a {
 }
 
 body {
-  background-color: #c3d8eb;
-  background: #c3d8eb url(_images/window-bkg-01.png) repeat;
+  background-color: #280b0b;
 }
 
 p {
@@ -433,6 +432,11 @@ a.hide-link:hover {
   width: 96%;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+div.wrap {
+  width: 100%;
+  background: #fff;
 }
 
 section {
@@ -516,15 +520,15 @@ header {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background-color: #570000;
+  background: #280b0b url("_images/header-bkg.jpg") repeat-x;
   width: 100%;
-  max-width: 1600px;
   height: 160px;
 }
 header div {
   display: inline-block;
   width: 100%;
-  margin-top: 25px;
+  max-width: 1600px;
+  margin: 25px auto 0 auto;
   color: #fff;
   font-family: 'Prompt', sans-serif;
   font-size: 24pt;
@@ -570,7 +574,6 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  max-width: 1600px;
   background-color: #a30000;
   height: 45px;
   color: #fff;
@@ -580,8 +583,10 @@ nav {
   z-index: 1000;
 }
 nav ul {
+  width: 100%;
+  max-width: 1600px;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 nav ul li {
@@ -605,14 +610,17 @@ nav ul li a:hover {
 
 .main-nav-scrolled {
   position: fixed;
-  width: 96%;
-  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   top: 0;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 body.contact-page {
+  background-color: #fff;
+}
+body.contact-page div.wrap {
+  width: 100%;
   background-color: #fff;
 }
 body.contact-page div.section-container {
@@ -648,6 +656,7 @@ body.contact-page section#right-side {
 }
 body.contact-page section#right-side label {
   display: block;
+  margin-bottom: .5em;
 }
 body.contact-page section#right-side input {
   margin-bottom: 20px;
@@ -661,6 +670,7 @@ body.contact-page section#right-side input#email {
 body.contact-page section#right-side textarea#comments {
   height: 150px;
   width: 80%;
+  margin-top: .2em;
 }
 body.contact-page section#right-side input#send {
   display: inline-block;
@@ -743,13 +753,17 @@ body.thank-you-page section a:hover {
     width: 90%;
   }
 }
+div.shoe {
+  width: 100%;
+  background: #280b0b url("_images/footer-bkg.jpg") repeat-x;
+}
+
 footer {
   width: 100%;
   max-width: 1600px;
   color: #fff;
   font-family: 'IM Fell Great Primer', sans-serif;
   margin-bottom: 100px;
-  background-color: #280b0b;
 }
 footer .tagline {
   text-align: center;
@@ -781,7 +795,6 @@ footer .copyright a:hover {
     display: block;
     -ms-flex-pack: inherit;
         justify-content: inherit;
-    height: auto;
   }
   nav ul li a {
     width: 100%;
@@ -791,7 +804,6 @@ footer .copyright a:hover {
     /*width: auto; ---- this causes the toggle to disappear - ?*/
     margin: 0;
     background: white;
-    overflow: hidden;
   }
 
   #main-nav li {
@@ -808,6 +820,7 @@ footer .copyright a:hover {
   .topMenu.expand {
     max-height: 900em;
     visibility: visible;
+    background-color: #fff;
   }
 
   #main-nav a, #main-nav h3 {

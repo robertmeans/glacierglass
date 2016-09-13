@@ -2,15 +2,17 @@ header {
 	display: flex;
 	justify-content: space-between;
 	// background: url(_images/glacier-glass-logo.png) no-repeat top 28px left 42px;
-	background-color: #570000;
+	background: #280b0b url("_images/header-bkg.jpg") repeat-x;
+	// background-color: #570000;
 	width: 100%;
-	max-width: 1600px;
+	// max-width: 1600px;
 	height: 160px;
 
 	div {
 		display: inline-block;
 		width: 100%;
-		margin-top: 25px;
+		max-width: 1600px;
+		margin: 25px auto 0 auto;
 		color: #fff;
 		font-family: 'Prompt', sans-serif;
 		font-size: 24pt;

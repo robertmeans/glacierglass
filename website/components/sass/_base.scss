@@ -3,8 +3,8 @@
 }
 body {
 	// background-color: #280b0b;
-	background-color: #c3d8eb;
-	background: #c3d8eb url(_images/window-bkg-01.png) repeat;
+	background-color: #280b0b;
+	// background: #c3d8eb url(_images/window-bkg-01.png) repeat;
 }
 p {
 	line-height: 1.5em;
@@ -33,7 +33,10 @@ a.hide-link {
 	max-width: 1600px;
 	margin: 0 auto;
 }
-
+div.wrap {
+	width: 100%;
+	background: #fff;
+}
 section {
 	position: relative;
 	width: 90%;
