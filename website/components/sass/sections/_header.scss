@@ -2,7 +2,10 @@ header {
 	display: flex;
 	justify-content: space-between;
 	// background: url(_images/glacier-glass-logo.png) no-repeat top 28px left 42px;
-	background: #280b0b url("_images/header-bkg.jpg") repeat-x;
+
+	// background: #280b0b url("_images/header-bkg.jpg") repeat-x;
+	background: linear-gradient(0deg, rgba(111,4,4,1) 0%, rgba(43,11,11,1) 100%);
+
 	// background-color: #570000;
 	width: 100%;
 	// max-width: 1600px;

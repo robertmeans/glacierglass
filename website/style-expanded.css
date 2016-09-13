@@ -520,7 +520,7 @@ header {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: #280b0b url("_images/header-bkg.jpg") repeat-x;
+  background: linear-gradient(0deg, #6f0404 0%, #2b0b0b 100%);
   width: 100%;
   height: 160px;
 }
@@ -755,7 +755,7 @@ body.thank-you-page section a:hover {
 }
 div.shoe {
   width: 100%;
-  background: #280b0b url("_images/footer-bkg.jpg") repeat-x;
+  background: linear-gradient(0deg, #2b0b0b 0%, #6f0404 100%);
 }
 
 footer {
