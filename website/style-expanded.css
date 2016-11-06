@@ -516,10 +516,12 @@ a.back-to-top:hover {
 }
 
 header {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: linear-gradient(0deg, #6f0404 0%, #2b0b0b 100%);
   width: 100%;
   height: 160px;
@@ -569,10 +571,12 @@ header div .phone-number {
   }
 }
 nav {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   width: 100%;
   background-color: #a30000;
   height: 45px;
@@ -793,8 +797,9 @@ footer .copyright a:hover {
 
   nav {
     display: block;
-    -ms-flex-pack: inherit;
-        justify-content: inherit;
+    -webkit-justify-content: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
   }
   nav ul li a {
     width: 100%;
@@ -901,24 +906,28 @@ footer .copyright a:hover {
 }
 @media only screen and (max-width: 960px) {
   section {
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: column;
-        flex-flow: column;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
 
   .flexslider {
     display: block;
     width: 96%;
-    -ms-flex-order: 1;
-        order: 1;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
     margin: 10px auto 10px auto;
     float: none;
   }
 
   article {
-    -ms-flex-order: 2;
-        order: 2;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     margin: 15px 0px;
     width: 96%;
     max-width: 1000px;
