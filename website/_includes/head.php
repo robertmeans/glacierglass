@@ -13,4 +13,13 @@
 	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+	function recaptchaCallback() {
+	    $('#confirm').addClass('display');
+	    $('#send').removeAttr('disabled');
+	    $('#send').removeClass('display');
+	};
+	</script>	
 </head>

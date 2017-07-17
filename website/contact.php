@@ -23,7 +23,7 @@
 
   </section>
   <section id="right-side">
-      <form action="formmail.php" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">
+      <form action="mail-validation-confirmation.php" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">
           
       <ul>
           <li>
@@ -32,14 +32,18 @@
           </li>
           <li>
             <label class="text" for="email">Email</label>
-            <input name="email" type="email" id="email" tabindex="20" />
+            <input name="email" type="email" id="email" required tabindex="20" />
           </li>
           <li>
             <label class="text" for="comments">Comments</label>
             <textarea name="comments" id="comments" tabindex="30"></textarea>
           </li>
           <li>
-              <input id="send" type="submit" value="Send" tabindex="40" />
+            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdSZSkUAAAAAN4FxYtKLkOWnimJN7Ba8giHSJlb"></div>
+          </li>
+          <li>
+            <button id="confirm" disabled>Check Captcha above to enable Send</button>
+            <button id="send" class="display" disabled>Send</button>
           </li>
           
       </ul> 
